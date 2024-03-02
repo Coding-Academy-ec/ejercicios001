@@ -9,22 +9,24 @@ def test_suma():
 
 # --- Factorial
     
-from codigo import sumar
+from codigo import factorial
 
-def test_suma():
-    assert sumar(2, 3) == 5
-    assert sumar(-1, 1) == 0
-    assert sumar(0, 0) == 0
+def test_factorial():
+    assert factorial(5) == 120
+    assert factorial(0) == 1
+    assert factorial(1) == 1
+
 
 # 003 --- 
     
 def contar_vocales(cadena):
-  vocales = 'aeiouAEIOU'
-  contador = 0
-  for letra in cadena:
-      if letra in vocales:
-          contador += 1
-  return contador
+    vocales = 'aeiouAEIOU'
+    contador = 0
+    for letra in cadena:
+        if letra in vocales:
+            contador += 1
+    return contador
+
 
 # 004 ---
 
